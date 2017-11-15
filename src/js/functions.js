@@ -1,5 +1,5 @@
 export function addWrapper (htmlData, params) {
-  let bodyStyle = 'font-family:' + params.font + (!params.honorFont && '!important')+'; font-size: ' + params.font_size + (!params.honorFontSize && '!important')
+  let bodyStyle = 'font-family:' + params.font + (!params.honorFont ? '!important' : '')+'; font-size: ' + params.font_size + (!params.honorFontSize ? ' !important' : '')
   return '<div style="' + bodyStyle + '">' + htmlData + '</div>'
 }
 
