@@ -26,7 +26,7 @@ export default {
     printableElement = document.getElementById('printJS-html')
 
     // Get main element styling
-    printableElement.setAttribute('style', collectStyles(printableElement, params) + 'margin:0 !important;')
+    if (!params.keepStyles) printableElement.setAttribute('style', collectStyles(printableElement, params) + 'margin:0 !important;')
 
     // Get all children elements
     let elements = printableElement.children

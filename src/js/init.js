@@ -21,6 +21,7 @@ export default {
       font_size: '12pt',
       honorFont: false,
       honorFontSize: false,
+      keepStyles: false,
       honorMarginPadding: true,
       honorColor: false,
       properties: null,
@@ -56,6 +57,7 @@ export default {
         params.font_size = typeof args.font_size !== 'undefined' ? args.font_size : params.font_size
         params.honorFont = typeof args.honorFont !== 'undefined' ? args.honorFont : params.honorFont
         params.honorFontSize = typeof args.honorFontSize !== 'undefined' ? args.honorFontSize : params.honorFontSize
+        params.keepStyles = typeof args.keepStyles !== 'undefined' ? args.keepStyles : params.keepStyles
         params.honorMarginPadding = typeof args.honorMarginPadding !== 'undefined' ? args.honorMarginPadding : params.honorMarginPadding
         params.properties = typeof args.properties !== 'undefined' ? args.properties : params.properties
         params.gridHeaderStyle = typeof args.gridHeaderStyle !== 'undefined' ? args.gridHeaderStyle : params.gridHeaderStyle
